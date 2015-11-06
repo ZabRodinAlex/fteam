@@ -1,2 +1,1 @@
-# fteam
-firts versin v1.0
+first versin v1.0
