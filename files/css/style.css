@@ -1,0 +1,121 @@
+body {  
+  background: url('http://boombob.ru/img/picture/Jul/06/4d16c8277409a4119e39f29032ebe1f8/12.jpg');
+  background-size: cover, auto;
+}
+#wrapper  .content{
+  padding: 1px 65px;
+}
+.header {
+  height: 60px;
+}
+.tables {
+  background: #B0DB1F;
+  padding: 1px 10px;
+}
+.logo{
+  padding: 1px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #43141B;
+  font-size: 40px;
+}
+.content table{
+  width: 100%;
+  border-spacing: 0px 3px; 
+}
+#listofclubs tr th{
+  background: #38810E;
+  text-transform: uppercase;
+  color: #c9ced0;
+  font-size: 12px;
+  padding: 10px 20px;
+  text-align: left;
+}
+#listofclubs tr td.club-logo{
+  text-align: center;
+}
+#listofclubs tr td.club-logo img{
+  max-width: 45px;
+  max-height: 45px;
+  width: auto;
+  border: none;
+}
+#listofclubs tr td.club-name a{
+  color: #1c333c;
+  text-decoration: none;
+  font-size: 18px; line-height: 20px;
+  font-weight: 700
+}
+.deleteclub  input{
+  font-size: 15px;
+  background: #38810E;
+  font-weight: 600;
+  float: right;
+  cursor: pointer;
+  color: #D7E1E5;
+  height: 30px;
+  width: 90px;
+  border-radius: 3px;
+  border: none;
+}
+.btnclub  input{
+  font-size: 15px;
+  background: #38810E;
+  font-weight: 600;
+  cursor: pointer;
+  color: #D7E1E5;
+  height: 40px;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+}
+#contentsofclub tr th{
+  background: #38810E;
+  text-transform: uppercase;
+  color: #c9ced0;
+  font-size: 12px;
+  padding: 10px 20px;
+}
+.clubcol input{
+  width: 100%;
+  padding: 10px;
+  height: 35px;
+  border-radius: 4px;
+  border: 2px #38810E solid;
+  background: none;
+}
+.clubteamcol textarea{
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  border-radius: 4px;
+  border: 2px #38810E solid;
+  background: none;
+}
+
+.searchform {
+	float: right;
+    margin: -60px 40px 0px 0px;
+	display: inline-block;
+	border: solid 1px #d2d2d2;
+	padding: 3px 5px;
+	border-radius: 2em;
+	background: #38810E;
+}
+.searchform .searchfield {
+	padding: 6px 6px 6px 8px;
+	width: 202px;
+	border: solid 1px #bcbbbb;
+	border-radius: 2em;
+}
+.searchform .searchbutton {
+    font-weight: 600;
+    cursor: pointer;
+	color: #fff;
+	border: solid 1px #494949;
+	font-size: 11px;
+	height: 27px;
+	width: 48px;
+	border-radius: 2em;
+	background: #5f5f5f;
+}
