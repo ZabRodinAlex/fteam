@@ -1,7 +1,7 @@
 ﻿<html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Футбольные клубы v1.0</title>
+	<title>Футбольные клубы</title>
 	<script type="text/javascript" src="/files/js/jQuery.js"></script>
 	<link rel="stylesheet" href="/files/css/style.css">
 </head>
