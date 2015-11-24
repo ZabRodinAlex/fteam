@@ -1,12 +1,12 @@
-<?php
+ï»¿<?php
 require("files/config.php"); 
 $nameofclub = $_POST['nameofclub'];
 
 $result = $connect->query("select * from listofclubs where nameofclub = '$nameofclub'");
 $row = $result->fetch_object();
 
-//ôîðìàò JSON:
-// "êëþ÷1":"çíà÷åíè1", "êëþ÷2":"çíà÷åíè2" è ò.ä.
+//Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ JSON:
+// "ÐºÐ»ÑŽÑ‡1":"Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸1", "ÐºÐ»ÑŽÑ‡2":"Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸2" Ð¸ Ñ‚.Ð´.
 echo '{"id":"'.$row->id.'",
 	"winger":"'.$row->winger.'",
 	"halfback":"'.$row->halfback.'",

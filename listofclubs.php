@@ -1,12 +1,12 @@
-<?php
+п»ї<?php
 require("files/config.php");
 $result = $connect->query("select logo_url, nameofclub from listofclubs");
 $colResult = $result->num_rows;
 if($colResult){
 ?>		
 	<tr>
-		<th colspan="4"> клуб </th>
-		<th colspan="4"> клуб </th>
+		<th colspan="4"> РєР»СѓР± </th>
+		<th colspan="4"> РєР»СѓР± </th>
 	</tr>
 <?php	
 	for ($i = 0; $i < ($colResult - 1)/2; $i++ ) {
@@ -14,13 +14,13 @@ if($colResult){
 		echo '<tr>';
 		echo '<td class="club-logo"><img src='.$row->logo_url.'></td>';
 		echo '<td class="club-name"><a href="#" title='.$row->nameofclub.'>'.$row->nameofclub.'</a>';
-		echo '<td class="deleteclub"><input type="button" name="clubteam" title='.$row->nameofclub.' value="состав"></td>';
-		echo '<td class="deleteclub"><input type="button" name="deleteclub" title='.$row->nameofclub.' value="удалить"></td>';		
+		echo '<td class="deleteclub"><input type="button" name="clubteam" title='.$row->nameofclub.' value="СЃРѕСЃС‚Р°РІ"></td>';
+		echo '<td class="deleteclub"><input type="button" name="deleteclub" title='.$row->nameofclub.' value="СѓРґР°Р»РёС‚СЊ"></td>';		
 		$row = $result->fetch_object();
 		echo '<td class="club-logo"><img src='.$row->logo_url.'></td>';
 		echo '<td class="club-name"><a href="#" title='.$row->nameofclub.'>'.$row->nameofclub.'</a>';
-		echo '<td class="deleteclub"><input type="button" name="clubteam" title='.$row->nameofclub.' value="состав"></td>';
-		echo '<td class="deleteclub"><input type="button" name="deleteclub" title='.$row->nameofclub.' value="удалить"></td>';
+		echo '<td class="deleteclub"><input type="button" name="clubteam" title='.$row->nameofclub.' value="СЃРѕСЃС‚Р°РІ"></td>';
+		echo '<td class="deleteclub"><input type="button" name="deleteclub" title='.$row->nameofclub.' value="СѓРґР°Р»РёС‚СЊ"></td>';
 		echo '</tr>';
 	}
 	if ( $colResult%2 != 0 ) {
@@ -28,19 +28,19 @@ if($colResult){
 		echo '<tr>';
 		echo '<td class="club-logo"><img src='.$row->logo_url.'></td>';
 		echo '<td class="club-name"><a href="#" title='.$row->nameofclub.'>'.$row->nameofclub.'</a>';
-		echo '<td class="deleteclub"><input type="button" name="clubteam" title='.$row->nameofclub.' value="состав"></td>';
-		echo '<td class="deleteclub"><input type="button" name="deleteclub" title='.$row->nameofclub.' value="удалить"></td>';
+		echo '<td class="deleteclub"><input type="button" name="clubteam" title='.$row->nameofclub.' value="СЃРѕСЃС‚Р°РІ"></td>';
+		echo '<td class="deleteclub"><input type="button" name="deleteclub" title='.$row->nameofclub.' value="СѓРґР°Р»РёС‚СЊ"></td>';
 		echo '</tr>';
 	}
-}	else echo '<tr><td> Нет ни одной записи о клубах в базе. </td></tr>';
-	echo '<tr><td colspan="8" class="btnclub"><input type="button" name="addclub" value="добавить запись"></td></tr>';
+}	else echo '<tr><td> РќРµС‚ РЅРё РѕРґРЅРѕР№ Р·Р°РїРёСЃРё Рѕ РєР»СѓР±Р°С… РІ Р±Р°Р·Рµ. </td></tr>';
+	echo '<tr><td colspan="8" class="btnclub"><input type="button" name="addclub" value="РґРѕР±Р°РІРёС‚СЊ Р·Р°РїРёСЃСЊ"></td></tr>';
 ?>
 
 <script type="text/javascript">
 	$('input[name=addclub]').click( function () {
-		var nameofclub = prompt("Название клуба:", "");
-		if (!nameofclub)  alert("Ошибка! \nПустое название.");
-		else if (nameofclub.indexOf(' ') + 1) alert("Ошибка! \nНе используйте пробелы.");
+		var nameofclub = prompt("РќР°Р·РІР°РЅРёРµ РєР»СѓР±Р°:", "");
+		if (!nameofclub)  alert("РћС€РёР±РєР°! \nРџСѓСЃС‚РѕРµ РЅР°Р·РІР°РЅРёРµ.");
+		else if (nameofclub.indexOf(' ') + 1) alert("РћС€РёР±РєР°! \nРќРµ РёСЃРїРѕР»СЊР·СѓР№С‚Рµ РїСЂРѕР±РµР»С‹.");
 		else if (nameofclub) {
 			$.ajax({
 				type: "POST", url: "addclub.php", data: "nameofclub=" + nameofclub,
@@ -50,7 +50,7 @@ if($colResult){
 	});
 	$('input[name=deleteclub]').click( function () {
 		var nameofclub = $(this).attr("title");
-		if (confirm ("Вы действительно хотите удалить запись о клубе '" + nameofclub + "'?")) {
+		if (confirm ("Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ Р·Р°РїРёСЃСЊ Рѕ РєР»СѓР±Рµ '" + nameofclub + "'?")) {
 			$.ajax({
 				type: "POST", url: "deleteclub.php", data: "nameofclub=" + nameofclub,
 			});

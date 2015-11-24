@@ -1,8 +1,8 @@
-<tr>
-	<th>Õ¿œ¿ƒ¿ﬁŸ»≈</th>
-	<th>œŒÀ”«¿Ÿ»“Õ» »</th>
-	<th>«¿Ÿ»“Õ» »</th>
-	<th>¬–¿“¿–»</th>
+Ôªø<tr>
+	<th>–ù–ê–ü–ê–î–ê–Æ–©–ò–ï</th>
+	<th>–ü–û–õ–£–ó–ê–©–ò–¢–ù–ò–ö–ò</th>
+	<th>–ó–ê–©–ò–¢–ù–ò–ö–ò</th>
+	<th>–í–†–ê–¢–ê–†–ò</th>
 </tr>
 <tr class="clubteamcol">
 	<td style="display:none"><input type="text" name="club_id"></td>
@@ -12,7 +12,7 @@
 	<td><textarea type="text" name="goalie"></textarea></td>
 </tr>
 <tr>
-	<td colspan="10" class="btnclub"><input type="button" name="updateclubteam" value="ÒÓı‡ÌËÚ¸ ËÁÏÂÌÂÌËˇ"></td>
+	<td colspan="10" class="btnclub"><input type="button" name="updateclubteam" value="—Å–æ—Ö—Ä–∞–Ω–∏—Ç—å –∏–∑–º–µ–Ω–µ–Ω–∏—è"></td>
 </tr>
 <script type="text/javascript">
 $(document).ready( function() {

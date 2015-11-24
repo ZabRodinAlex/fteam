@@ -2,6 +2,7 @@
 require("files/config.php");
 $nameofclub = $_POST['nameofclub'];
 
+
 $result = $connect->query("select * from listofclubs where nameofclub = '$nameofclub'");
 $row = $result->fetch_object();
 
