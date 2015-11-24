@@ -1,8 +1,8 @@
-ï»¿<?php
+<?php
 require("files/config.php");
 $nameofclub = $_POST['nameofclub'];
 
 if($connect->query("INSERT INTO  listofclubs (id, nameofclub, seasoninPL, gamesinPL, victories, draws, injuries, goals, goalsconceded, cleansheets) VALUES (NULL, '$nameofclub', '', '', '', '', '', '', '', '');"))
-	   echo "Ð—Ð°Ð¿Ð¸ÑÑŒ Ð¾ ÐºÐ»ÑƒÐ±Ðµ '" . $nameofclub . "' ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð°!";
-else   echo "ÐžÐ¨Ð˜Ð‘ÐšÐ Ð’ Ð—ÐÐŸÐ ÐžÐ¡Ð•!";
+	   echo "Çàïèñü î êëóáå '" . $nameofclub . "' óñïåøíî äîáàâëåíà!";
+else   echo "ÎØÈÁÊÀ Â ÇÀÏÐÎÑÅ!";
 ?>
