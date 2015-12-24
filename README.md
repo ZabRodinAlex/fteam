@@ -1,5 +1,5 @@
 
-<h2>version v2.0</h2>
-data: 25.11.15
+<h2>update</h2>
+date: 24.12.15
 
-site: http://shopza.ml
+site: http://ft.vkall.ru
