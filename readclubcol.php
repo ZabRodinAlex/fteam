@@ -43,6 +43,19 @@ $(document).ready( function() {
 				$('input[name=goals]').val(data.goals);
 				$('input[name=goalsconceded]').val(data.goalsconceded);
 				$('input[name=cleansheets]').val(data.cleansheets);
+				var pieData = [
+						{ value: data.seasoninPL, label: 'СЕЗОНОВ В ПРЕМЬЕР-ЛИГЕ', color: '#811bd6' },
+						{ value: data.gamesinPL, label: 'ИГР В ПРЕМЬЕР-ЛИГЕ', color: '#9cbaba' },
+						{ value: data.victories, label: 'ПОБЕД', color: '#E22D2D' },
+						{ value: data.draws, label: 'НИЧЬИХ', color: '#2D3CE2' },
+						{ value: data.injuries, label: 'ПОРАЖЕНИЙ', color: '#16A0C6' },
+						{ value: data.goals, label: 'ЗАБИТЫХ МЯЧЕЙ', color: '#E910A4' },
+						{ value: data.goalsconceded, label: 'ПРОПУЩЕННЫХ МЯЧЕЙ', color: '#E9DE10' },
+						{ value: data.cleansheets, label: 'СУХИХ МАТЧЕЙ', color: '#6ae128' }
+					]
+
+					var context = document.getElementById('charts').getContext('2d');
+					var skillsChart = new Chart(context).Pie(pieData);
 			}
 		});
 });

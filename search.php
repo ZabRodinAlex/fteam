@@ -1,8 +1,8 @@
 ﻿<?php
 $host = "localhost";
-$user = "user52082_data"; 
-$pass = "user52082_data"; 
-$name = "user52082_team";
+	$user = "team"; 
+	$pass = "team"; 
+	$name = "team";
 	
 
 mysql_connect($host, $user, $pass) or die(mysql_error());

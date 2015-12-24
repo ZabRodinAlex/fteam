@@ -2,9 +2,9 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Футбольные клубы</title>
-	<script type="text/javascript" src="/files/jQuery.js"></script>
-        <script type="text/javascript" src="/files/chart.js"></script>
-	<link rel="stylesheet" href="/files/style.css">
+	<script type="text/javascript" src="/files/js/jQuery.js"></script>
+	<link rel="stylesheet" href="/files/css/style.css">
+    <script type="text/javascript" src="/files/js/chart.js"></script>
 </head>
 <body>
 <div id="wrapper">
